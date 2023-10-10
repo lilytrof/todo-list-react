@@ -1,1 +1,0 @@
-[Link to deploy todo list react app](http://lilytrof.github.io/todo-list-react)
