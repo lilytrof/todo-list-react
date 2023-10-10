@@ -1,0 +1,48 @@
+$gap: 22px;
+$light-color: white;
+$dark-color: #1f1f1f;
+$bright-color: #CFFF46;
+$delete-color: #D52941;
+$border: 2px solid $light-color;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+  background: #1f1f1f;
+}
+
+.Todo {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+  border: $border;
+  border-radius: 16px;
+  color: $light-color;
+  @media (max-width: 425px) {
+    margin: 0 auto;
+  }
+}
+
+input,
+button {
+  font-family: 'Noto Sans', sans-serif;
+  outline: none;
+}
+
+@import "btns";
+@import "todoAdd";
+@import "todoList";
+@import "todoItem";
+@import "todoFilter";
+@import "todoBottom";

@@ -1,0 +1,8 @@
+.Todo {
+  &-List {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

@@ -1,0 +1,73 @@
+@mixin btn-active($background, $color) {
+  background: $background;
+  color: $color;
+  border: 2px solid $background;
+}
+
+.Btn {
+  font-weight: 500;
+  padding: 6px 10px;
+  height: 40px;
+  background: $dark-color;
+  border-radius: 8px;
+  color: $light-color;
+  cursor: pointer;
+  transition: 0.2s;
+  border: none;
+
+  &_plus {
+    border: $border;
+    font-size: 22px;
+    width: 40px;
+    line-height: 1;
+    min-width: 40px;
+    &:active {
+      @include btn-active($bright-color, $dark-color);
+    }
+    @media (min-width: 1024px) {
+      &:hover {
+        @include btn-active($bright-color, $dark-color);
+      }
+    }
+  }
+
+  &_remove {
+    border: $border;
+    &:hover {
+      @include btn-active($delete-color, $dark-color);
+    }
+  }
+}
+
+.Todo-Filter {
+  .Btn {
+    border: $border;
+    &:hover,
+    &_active {
+      border-color: $bright-color;
+      @include btn-active($bright-color, $dark-color);
+    }
+  }
+}
+
+.Todo-List {
+  .Btn {
+    height: auto;
+    padding: 0;
+
+    &_delete {
+      opacity: 0.2;
+
+      & > svg {
+        vertical-align: middle;
+        width: 22px;
+        height: 22px;
+      }
+
+      &:hover {
+        color: $delete-color;
+        opacity: 1;
+      }
+    }
+  }
+}

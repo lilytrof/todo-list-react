@@ -1,0 +1,10 @@
+.Todo {
+  &-Bottom {
+    color: $light-color;
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
