@@ -21,31 +21,46 @@
     width: 40px;
     line-height: 1;
     min-width: 40px;
+    
     &:active {
-      @include btn-active($bright-color, $dark-color);
+      @include btn-active($accent-color, $dark-color);
     }
+
     @media (min-width: 1024px) {
       &:hover {
-        @include btn-active($bright-color, $dark-color);
+        @include btn-active($accent-color, $dark-color);
       }
     }
   }
 
   &_remove {
     border: $border;
+
+    &:active {
+      @include btn-active($delete-color, $dark-color);
+    }
+
+    @media (min-width: 1024px) {
     &:hover {
       @include btn-active($delete-color, $dark-color);
     }
+  }
   }
 }
 
 .Todo-Filter {
   .Btn {
     border: $border;
-    &:hover,
-    &_active {
-      border-color: $bright-color;
-      @include btn-active($bright-color, $dark-color);
+
+    &_active,
+    &:active {
+      @include btn-active($accent-color, $dark-color);
+    }
+
+    @media (min-width: 1024px) {
+      &:hover {
+        @include btn-active($accent-color, $dark-color);
+      }
     }
   }
 }

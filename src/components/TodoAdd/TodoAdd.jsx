@@ -24,7 +24,7 @@ const TodoAdd = ({todo, setTodo}) => {
   }
 
   return (
-    <form onSubmit={addTodo} className="Todo-Form">
+    <form onSubmit={addTodo} className="Todo-Form" method="post">
       <input className="Todo-Input" required type="text"/>
       <button type="submit" className="Btn Btn_plus">+</button>
     </form>

@@ -1,0 +1,36 @@
+.AboutMe {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  color: $light-color;
+  padding: 20px 0 20px;
+
+  &-MyGitHubLink {
+    color: $light-color;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 6px;
+    transition: 0.1s;
+    
+    &:active {
+      color: $accent-color;
+    }
+
+    &:active > .AboutMe-MyGitHubSvg {
+      fill: $accent-color;
+    }
+
+    @media (min-width: 1024px) {
+
+      &:hover {
+        color: $accent-color;
+      }
+
+      &:hover > .AboutMe-MyGitHubSvg {
+        fill: $accent-color;
+      }
+    }
+  }
+}
