@@ -7,9 +7,9 @@ const Footer = () => {
       <div className="AboutMe">
         <a
           className="AboutMe-MyGitHubLink"
-          href="https://github.com/lilytrof/todo-list/tree/main"
+          href="https://github.com/lilytrof/todo-list-react/tree/main"
         >
-          <GithubLogo className="AboutMe-MyGitHubSvg"/>
+          <GithubLogo className="AboutMe-MyGitHubSvg" />
           <p>lilytrof</p>
         </a>
         <p>2023</p>
